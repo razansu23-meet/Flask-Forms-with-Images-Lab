@@ -1,35 +1,36 @@
 # Flask Forms with Images
 
 ## Objective: 
-In this lab, you will learn about passing variables to templates (HTML pages) and displaying them... by creating your very own Instagram page!  
+In this lab, you will learn about incorporating user image uploads to directories with firebase and displaying them... by adding to your very own meet channel!  
 
-By the end of this lab, you will have your Instagram profile page look something like this:  
-
-
-
-<img src="https://github.com/meet-projects/Y2-Summer-Labs/blob/master/0.6%20Advanced%20Flask/AdvancedFlask-Instagram.png" width="450">
-
-
-
+By the end of this lab, you will have a profile with images your users uploaded.  
 
 > Before we start, make sure to fork the repo, and clone the code to your machine.
 
 
 ## Instructions:
 
-In this lab, we'll be creating our own kind of Instagram profile page!  
-We have provided you with some HTML, CSS, and JS already, so not to worry about design; We'll be focusing on our programming skills!  
+In this lab, we'll be creating our very own meet profile with your users uploading the images!  
+We have provided you with some frontend and backend code already, so make sure to clone the repo!  
 
-1. Run `main.py`; Did everything load up correctly?
-    - Fix the incorrectly loaded content
-    - *Hint: Take a look at `index.html`, are all pictures visible? Are all scripts linked correctly?*
+1. Create and set up a new Firebase project:
+    1. Go to https://console.firebase.google.com/
+    2. Create a new project and name it whatever you'd like.
+    3. Go to Realtime Database and create a database.
+    4. Go to rules and change false to true.
 
-2. In `main.py`, you have a variable called `image_link`, and another variable called `user_bio`:
-    - **Pass** these *two variables* to `index.html`
-    - **Replace** the first image with `image_link`
-    - **Replace** the **description** `<h1>` with `user_bio`
-    - Run `main.py`, how is it lookin' now? ;)
-    - *Feel free* to change the values of `image_link` and `user_bio` to your own image and bio! 
+2. Connect the Firebase project to your Flask app:
+    1. In your Firebase project:
+        - Go to project setting and create a web app.
+        - Copy the firebaseconfig lines.
+    2. In the app.py file:
+        - Create a dictionary called config and paste the copied lines (make sure to fix the syntax errors).
+        - Intialize the firebase using pyrebase.
+        - Intialize db using the firebase object.
+
+3. In `add_post.html`, you have a form that contains an input called caption and a submit button:
+    - **Add** the required line to the form tag to be able to accept images.
+    - **Add** an input that you can upload images to.
         
 Now, after you're done with setting up the profile info, let's display our posts!  
 
