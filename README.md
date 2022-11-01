@@ -35,31 +35,22 @@ We have provided you with some frontend and backend code already, so make sure t
 4. Check the `UPLOAD_FOLDER` and see if the needed folder in static are there, if no create them.
 
 5. Uploading images to our directory:
-    - 
+    - Make sure to copy the functions that upload to the directory from the slides.
+    - In the `/add_post` route get the inputs from the form and upload the image.
 
-Now, after you're done with setting up  info, let's display our posts!  
+6. Saving images in the Realtime Database:
+    - after uploading the image, create a dictionary for the post inputs.
+    - **Push** the dictionary under the child `"Posts"`.
 
-##### That's so cool! You have just created your first advanced flask application!
+Now, after you're done with uploading posts, let's them!
+
+7. Dispalying the posts:
+    - In the `/` route get all the posts under the `"Posts"` child, and pass the posts to the html page.
+    - Using a **for loop** display all the posts.
+
+
 ##### Call an Instructor/TA to check your completed tasks
  
-
-If you have extra time, continue to the **Bonus Problems** *below*.  
-If not, make sure you commit and push your code.
-
-
-<img src="https://miro.medium.com/max/1200/1*SzN6u2U98S4RyhWo_WyaHQ.png" width="400">
-
-
-
-
-## Bonus Problems: 
-1. Fill in the **Social Media** icons with accessible links!
-    - Make sure to **pass** the links variables and linking them correctly in `index.html`.
-    
-2. If you add too many posts, it'll start getting clunky and messy... try to fix it!
-    - *Hint: maybe something like, say, every 3 posts on a row? or something like that.*
-
-##### Great job on completing the bonus problems section!  
 ###### make sure you commit and push your code.
 
 
