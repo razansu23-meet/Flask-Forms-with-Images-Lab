@@ -1,4 +1,4 @@
-# Flask Forms with Images
+# Flask Forms with Images & Firebase
 
 ## Objective: 
 In this lab, you will learn about incorporating user image uploads to directories with firebase and displaying them... by adding to your very own meet channel!  
@@ -34,7 +34,10 @@ We have provided you with some frontend and backend code already, so make sure t
         
 4. Check the `UPLOAD_FOLDER` and see if the needed folder in static are there, if no create them.
 
-Now, after you're done with setting up the profile info, let's display our posts!  
+5. Uploading images to our directory:
+    - 
+
+Now, after you're done with setting up  info, let's display our posts!  
 
 ##### That's so cool! You have just created your first advanced flask application!
 ##### Call an Instructor/TA to check your completed tasks
