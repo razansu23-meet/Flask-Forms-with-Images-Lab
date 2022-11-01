@@ -9,7 +9,7 @@ app = Flask(  # Create a flask app
     static_folder='static'  # Name of directory for static files
 )
 
-UPLOAD_FOLDER = 'static/images/pets'
+UPLOAD_FOLDER = 'static/images/posts'
 ALLOWED_EXTENSIONS = ['png', 'jpg', 'jpeg']
 
 
