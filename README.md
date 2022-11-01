@@ -30,15 +30,11 @@ We have provided you with some frontend and backend code already, so make sure t
 
 3. In `add_post.html`, you have a form that contains an input called caption and a submit button:
     - **Add** the required line to the form tag to be able to accept images.
-    - **Add** an input that you can upload images to.
+    - **Create** an input that you can upload images to.
         
+4. Check the `UPLOAD_FOLDER` and see if the needed folder in static are there, if no create them.
+
 Now, after you're done with setting up the profile info, let's display our posts!  
-
-3. In `main.py` theres a variable called `posts`, it's a dictionary that has image links as *Keys*, and post captions as *Values*!
-    - Pass `posts` to `index.html`, and display each post correctly!
-    - *Hint: hmmm.. how can we **loop** through these posts and show them on the page?*
-    - *Feel free* to change the dictionary keys and values to create your own Instagram profile!
-
 
 ##### That's so cool! You have just created your first advanced flask application!
 ##### Call an Instructor/TA to check your completed tasks
