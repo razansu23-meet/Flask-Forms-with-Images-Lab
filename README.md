@@ -1,4 +1,4 @@
-# Advanced Flask Lab
+# Flask Forms with Images
 
 ## Objective: 
 In this lab, you will learn about passing variables to templates (HTML pages) and displaying them... by creating your very own Instagram page!  
