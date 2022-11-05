@@ -29,15 +29,15 @@
 
 						<!-- Thumbnails -->
 							<section class="thumbnails">
-                
+                {%for post in posts%}
                 <div>
                       <a href="">
-                        <img src="static/images/thumbs/01.jpg" alt="" />
-                        <h3>Caption... blah blah blah</h3>
+                        <img src="static/images/fulls/{{posts[post]['photo']}}" >
+                        <h3>{{posts[post]['name']}}</h3>
                       </a>
                 
                 </div>  
-
+                	{%endfor%}
 							</section>
 
 					</section>

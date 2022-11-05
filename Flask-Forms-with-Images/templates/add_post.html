@@ -14,12 +14,18 @@
         <center>
           <h1>Add Post</h1>
 
-          <form method="post" action="/add_post">
-          		<input type="text" name="caption" placeholder="Caption">
-          		<input type="submit" name="Submit">
-          </form>
           
+					<form method="post" action="/add_post" enctype="multipart/form-data">
 
+
+					    <input type="text" name="name" placeholder="Add pic"/>
+					    <input type="file" name="post" placeholder="Photo"/>
+					    <input type="submit" value="Submit">
+
+
+					</form>
+          
+				<a href="/"> see posts </a>
         </center>
 
 
